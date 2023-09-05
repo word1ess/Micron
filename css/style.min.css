@@ -922,6 +922,14 @@ table.table__row,
   overflow: hidden;
 }
 
+table.table__row {
+  overflow-x: scroll;
+}
+
+table.table__row tbody {
+  min-width: 816px;
+}
+
 table.table__row .text th {
   width: 200px;
 }
