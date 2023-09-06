@@ -190,6 +190,9 @@ h6 {
   font-size: 20px;
   text-transform: uppercase;
 }
+.btn:hover {
+  background: #a20013;
+}
 .btn-arrow {
   padding: 13px;
   border-radius: 8px;
@@ -201,6 +204,9 @@ h6 {
   background: transparent;
   font-weight: 500;
 }
+.btn-bordered:hover {
+  background: #ecebeb;
+}
 
 .section {
   padding: 50px 0px;
@@ -208,12 +214,15 @@ h6 {
 
 .input {
   border-radius: 12px;
-  border: 3px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
   color: #3c3c3b;
   font-size: 18px;
   font-weight: 400;
   line-height: 112%;
   padding: 28px 32px;
+}
+.input:focus {
+  border: 1px solid #000;
 }
 
 .headcrumbs {
@@ -268,6 +277,11 @@ h6 {
 }
 .form.blue .btn {
   background: #c90017;
+}
+
+.form__row form .btn:hover,
+.catalog-material__item.next .btn:hover {
+  background: #052049;
 }
 
 .header {
@@ -360,6 +374,10 @@ h6 {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
+  cursor: pointer;
+}
+.header__link:hover {
+  color: rgb(211, 211, 211);
 }
 .header__btn {
   display: flex;
@@ -414,14 +432,23 @@ h6 {
 .header-down__submenu li:hover {
   background: #c90017;
 }
+.header-down__menu.active,
+.header-down__submenu.active {
+  display: block;
+}
 
 .header-down__menu {
-  top: 40px;
+  padding-top: 40px;
+  top: 0px;
 }
 
 .header-down__submenu {
-  top: 0px;
+  transform: translate(3px, 111px);
   left: 130px;
+}
+
+.dropdown-container {
+  cursor: pointer;
 }
 
 .intro {
@@ -1376,8 +1403,15 @@ body {
   .footer__list li {
     margin: 0px 0px 12px;
   }
+  .partners__row {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
 }
 @media only screen and (max-width: 992px) {
+  .block__item {
+    display: none;
+  }
   .intro-item-bordered .intro-item__img {
     height: 350px;
     order: 2;
@@ -1404,6 +1438,22 @@ body {
   .contacts__info ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .dropdown-container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+  }
+  .header-down__menu {
+    position: relative;
+    padding: 0px;
+    transform: translate(-50px, 0px);
+  }
+  .header-down__submenu {
+    transform: translate(23px, 117px);
+    left: 130px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1469,5 +1519,10 @@ body {
   }
   .container {
     padding: 0px 15px;
+  }
+  .header-down__menu {
+    position: relative;
+    padding: 0px;
+    transform: translate(-70px, 0px);
   }
 }
