@@ -1761,6 +1761,18 @@ body {
   .item-table__table th {
     font-size: 18px;
   }
+  .footer__logo {
+    margin: 0px auto;
+    margin-bottom: 24px;
+  }
+  .footer__text,
+  .footer__develop {
+    text-align: center;
+  }
+  .footer__develop img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 430px) {
   .intro__row h1 {
