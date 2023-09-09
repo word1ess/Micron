@@ -669,6 +669,7 @@ p.white,
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  transition: all 300ms ease;
 }
 .catalog__item.next {
   display: flex;
@@ -678,7 +679,6 @@ p.white,
   height: 210px;
   gap: 20px;
   background: linear-gradient(180deg, #0b4296 0%, #062555 100%);
-  transition: all 100ms ease;
 }
 .catalog__item.next p {
   color: #fff;
@@ -726,6 +726,7 @@ p.white,
   border-radius: 13px;
   overflow: hidden;
   padding: 30px 42px;
+  transition: all 300ms ease;
 }
 .catalog-material__item::after {
   content: "";
@@ -1280,7 +1281,7 @@ p.white,
   border-radius: 12px;
   border: 1px solid #e0d9da;
   position: relative;
-  transition: all 100ms ease;
+  transition: all 300ms ease;
 }
 .materials__item:hover {
   transform: scale(1.1);
