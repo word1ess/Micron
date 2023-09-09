@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Материалы</title>
 </head>
@@ -296,42 +298,53 @@
                 <section class="materials section">
                     <div class="container">
                         <h2>материалы</h2>
-                        <div class="materials__row">
-                            <div class="materials__item">
-                                <div class="materials__img">
-                                    <img src="img/item/item.png" alt="">
+                        <div class="materials__slider swiper">
+                            <div class="materials__row swiper-wrapper">
+                                <div class="materials__item swiper-slide">
+                                    <div class="materials__img">
+                                        <img src="img/item/item.png" alt="">
+                                    </div>
+                                    <h3>SNW 350</h3>
+                                    <a href="#" class="btn btn-bordered">Подробнее</a>
                                 </div>
-                                <h3>SNW 350</h3>
-                                <a href="#" class="btn btn-bordered">Подробнее</a>
-                            </div>
-                            <div class="materials__item">
-                                <div class="materials__img">
-                                    <img src="img/item/item.png" alt="">
+                                <div class="materials__item swiper-slide">
+                                    <div class="materials__img">
+                                        <img src="img/item/item.png" alt="">
+                                    </div>
+                                    <h3>SNW 350</h3>
+                                    <a href="#" class="btn btn-bordered">Подробнее</a>
                                 </div>
-                                <h3>SNW 350</h3>
-                                <a href="#" class="btn btn-bordered">Подробнее</a>
-                            </div>
-                            <div class="materials__item">
-                                <div class="materials__img">
-                                    <img src="img/item/item.png" alt="">
+                                <div class="materials__item swiper-slide">
+                                    <div class="materials__img">
+                                        <img src="img/item/item.png" alt="">
+                                    </div>
+                                    <h3>SNW 350</h3>
+                                    <a href="#" class="btn btn-bordered">Подробнее</a>
                                 </div>
-                                <h3>SNW 350</h3>
-                                <a href="#" class="btn btn-bordered">Подробнее</a>
-                            </div>
-                            <div class="materials__item">
-                                <div class="materials__img">
-                                    <img src="img/item/item.png" alt="">
+                                <div class="materials__item swiper-slide">
+                                    <div class="materials__img">
+                                        <img src="img/item/item.png" alt="">
+                                    </div>
+                                    <h3>SNW 350</h3>
+                                    <a href="#" class="btn btn-bordered">Подробнее</a>
                                 </div>
-                                <h3>SNW 350</h3>
-                                <a href="#" class="btn btn-bordered">Подробнее</a>
-                            </div>
-                            <div class="materials__item">
-                                <div class="materials__img">
-                                    <img src="img/item/item.png" alt="">
+                                <div class="materials__item swiper-slide">
+                                    <div class="materials__img">
+                                        <img src="img/item/item.png" alt="">
+                                    </div>
+                                    <h3>SNW 350</h3>
+                                    <a href="#" class="btn btn-bordered">Подробнее</a>
                                 </div>
-                                <h3>SNW 350</h3>
-                                <a href="#" class="btn btn-bordered">Подробнее</a>
+                                <div class="materials__item swiper-slide">
+                                    <div class="materials__img">
+                                        <img src="img/item/item.png" alt="">
+                                    </div>
+                                    <h3>SNW 350</h3>
+                                    <a href="#" class="btn btn-bordered">Подробнее</a>
+                                </div>
                             </div>
+                            <div class="swiper-button-prev prev-swiper-one"></div>
+                            <div class="swiper-button-next next-swiper-one"></div>
                         </div>
                     </div>
                 </section>
@@ -340,7 +353,7 @@
                     <div class="container">
                         <div class="form__row">
                             <div class="form__form">
-                                <h2>Задать вопрос</h2>
+                                <div class="title white">Задать вопрос</div>
                                 <form action="#">
                                     <div class="flex">
                                         <input class="input" type="text" name="name" placeholder="Ваше имя">
@@ -351,7 +364,7 @@
                                 </form>
                             </div>
                             <div class="form__info">
-                                <h2>схема сотрудничества</h2>
+                                <div class="title white">схема сотрудничества</div>
                                 <ul>
                                     <li>Ознакомиться с продукций на сайте</li>
                                     <li>Позвонить или оставить заявку на сайте</li>
@@ -365,14 +378,35 @@
                 </article>
                 <article class="partners section">
                     <div class="container">
-                        <h2>Научные и индустриальные партнеры</h2>
-                        <div class="partners__row">
-                            <img class="partners__item" src="img/svgicons/partner-1.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-2.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-3.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-4.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-5.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-6.svg" alt="">
+                        <div class="title">Научные и индустриальные партнеры</div>
+                        <div class="partners__slider swiper">
+                            <div class="partners__row swiper-wrapper">
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-1.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-2.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-3.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-6.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-4.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-5.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-6.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-4.svg" alt="">
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -389,6 +423,10 @@
                     Ad mollitia omnis cum soluta nostrum quam repellat exercitationem
                     voluptatem iusto numquam odit possimus.
                 </p>
+                <div class="footer__develop">
+                    <p>Разработанно</p>
+                    <img src="img/svgicons/kruw.svg" alt="">
+                </div>
             </div>
             <nav class="footer__nav block__item">
                 <h3 class="footer__title block__title">Продукция</h3>

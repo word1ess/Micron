@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="js/app.min.js"></script>
     <title>Главная</title>
 </head>
@@ -157,14 +159,35 @@
                 </section>
                 <article class="partners section">
                     <div class="container">
-                        <h2>Научные и индустриальные партнеры</h2>
-                        <div class="partners__row">
-                            <img class="partners__item" src="img/svgicons/partner-1.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-2.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-3.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-4.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-5.svg" alt="">
-                            <img class="partners__item" src="img/svgicons/partner-6.svg" alt="">
+                        <div class="title">Научные и индустриальные партнеры</div>
+                        <div class="partners__slider swiper">
+                            <div class="partners__row swiper-wrapper">
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-1.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-2.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-3.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-6.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-4.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-5.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-6.svg" alt="">
+                                </div>
+                                <div class="partners__item swiper-slide">
+                                    <img class="partners__item swiper-slide" src="img/svgicons/partner-4.svg" alt="">
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -181,6 +204,10 @@
                     Ad mollitia omnis cum soluta nostrum quam repellat exercitationem
                     voluptatem iusto numquam odit possimus.
                 </p>
+                <div class="footer__develop">
+                    <p>Разработанно</p>
+                    <img src="img/svgicons/kruw.svg" alt="">
+                </div>
             </div>
             <nav class="footer__nav block__item">
                 <h3 class="footer__title block__title">Продукция</h3>
