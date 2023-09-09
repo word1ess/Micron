@@ -935,7 +935,16 @@ p.white,
 }
 
 .partners {
+  padding: 0px;
   background: linear-gradient(0deg, rgba(217, 217, 217, 0.2) 13.71%, rgba(217, 217, 217, 0) 154.23%);
+}
+.partners .title {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+}
+.partners__slider {
+  padding: 130px 0px 50px;
 }
 .partners__item {
   position: relative;
@@ -949,6 +958,17 @@ p.white,
   object-fit: fill;
   width: 100%;
   height: 100%;
+}
+.partners .swiper-button-prev,
+.partners .swiper-button-next {
+  bottom: auto;
+  top: 50px;
+  left: auto;
+  right: 0px;
+  color: #949393;
+}
+.partners .swiper-button-prev {
+  right: 60px;
 }
 
 .intro-item {
