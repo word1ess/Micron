@@ -257,6 +257,12 @@ p.white,
   font-weight: 500;
   line-height: 134.9%;
 }
+.headcrumbs__row a:hover {
+  color: #cac7c7;
+}
+.headcrumbs__row a:active {
+  color: #bdbdbd;
+}
 .headcrumbs__row p {
   color: #9fabaf;
   font-size: 16px;
