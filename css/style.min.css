@@ -146,34 +146,38 @@ h6 {
   font-weight: 500;
   font-style: normal;
 }
-.title {
+h1,
+h2 {
   color: #1e282b;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0px 0px 22px;
 }
-.title.white {
+h1.white,
+h2.white {
   color: #fff;
 }
 
-.subtitle {
+h3 {
   color: #0b4296;
   font-size: 18px;
   font-weight: 500;
   font-size: 18px;
 }
-.subtitle.white {
+h3.white {
   color: #fff;
 }
 
-.text {
+p,
+.table__row table th:first-child {
   font-size: 16px;
   color: #5d6a6d;
   font-weight: 500;
   line-height: 135%;
 }
-.text.white {
+p.white,
+.table__row table th:first-child.white {
   font-weight: 300;
   color: #fff;
 }
@@ -189,13 +193,18 @@ h6 {
   border-radius: 13px;
   font-size: 20px;
   text-transform: uppercase;
+  transition: all 300ms ease;
 }
 .btn:hover {
   background: #a20013;
 }
+.btn:active {
+  background: #870010;
+}
 .btn-arrow {
   padding: 13px;
   border-radius: 8px;
+  transition: all 300ms ease;
 }
 .btn-bordered {
   color: #1e282b;
@@ -203,9 +212,13 @@ h6 {
   font-size: 16px;
   background: transparent;
   font-weight: 500;
+  transition: all 300ms ease;
 }
 .btn-bordered:hover {
-  background: #ecebeb;
+  background: rgb(255, 238, 238);
+}
+.btn-bordered:active {
+  background: rgb(240, 222, 222);
 }
 
 .section {
@@ -214,15 +227,16 @@ h6 {
 
 .input {
   border-radius: 12px;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   color: #3c3c3b;
   font-size: 18px;
   font-weight: 400;
   line-height: 112%;
   padding: 28px 32px;
+  transition: all 300ms ease;
 }
 .input:focus {
-  border: 1px solid #000;
+  border: 2px solid #0b4296;
 }
 
 .headcrumbs {
@@ -283,6 +297,77 @@ h6 {
 .catalog-material__item.next .btn:hover {
   background: #052049;
 }
+.form__row form .btn:active,
+.catalog-material__item.next .btn:active {
+  background: #031531;
+}
+
+.form.blue form .btn:hover {
+  background: #a20013;
+}
+.form.blue form .btn:active {
+  background: #870010;
+}
+.form.blue form .input:focus {
+  border: 2px solid #c90017;
+}
+
+.dialogbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.3);
+}
+.dialogbox__inner {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  height: 100%;
+  width: 100%;
+}
+.dialogbox__window {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px 50px 41px;
+  width: 100%;
+  max-width: 854px;
+  border-radius: 30px;
+  background: #102c56;
+}
+.dialogbox__close {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 32px;
+  width: 22px;
+  height: 22px;
+  background: center center no-repeat;
+  background-size: contain;
+  background-image: url(../img/svgicons/close.svg);
+  cursor: pointer;
+}
+.dialogbox__form h2 {
+  color: #fff;
+  margin: 0px 0px 30px;
+}
+.dialogbox__form .input {
+  display: block;
+  width: 100%;
+  margin: 0px 0px 13px;
+}
+.dialogbox__form .btn {
+  padding: 21px 60px;
+}
 
 .header {
   position: fixed;
@@ -310,7 +395,6 @@ h6 {
   align-items: center;
   height: 100%;
   max-width: 1680px;
-  padding: 0px 30px;
   position: relative;
   z-index: 3;
   margin: 0 auto;
@@ -377,7 +461,10 @@ h6 {
   cursor: pointer;
 }
 .header__link:hover {
-  color: rgb(211, 211, 211);
+  color: rgb(238, 236, 236);
+}
+.header__link:active {
+  color: rgb(209, 206, 206);
 }
 .header__btn {
   display: flex;
@@ -401,6 +488,7 @@ h6 {
 }
 .header__btn-text {
   font-family: Teko;
+  color: #fff;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -431,6 +519,10 @@ h6 {
 .header-down__menu li:hover,
 .header-down__submenu li:hover {
   background: #c90017;
+}
+.header-down__menu li a,
+.header-down__submenu li a {
+  color: #fff;
 }
 .header-down__menu.active,
 .header-down__submenu.active {
@@ -493,6 +585,7 @@ h6 {
   line-height: 119.8%; /* 45.524px */
   text-transform: uppercase;
   max-height: 1100px;
+  color: #fff;
 }
 .intro__row h2 {
   text-align: center;
@@ -500,6 +593,7 @@ h6 {
   font-weight: 500;
   line-height: 124.4%; /* 24.88px */
   max-width: 1100px;
+  color: #fff;
 }
 .intro__row .btn {
   text-transform: uppercase;
@@ -525,7 +619,7 @@ h6 {
   display: flex;
   gap: 50px;
 }
-.about__row .text {
+.about__row p {
   margin: 0px 0px 30px;
   max-width: 660px;
 }
@@ -570,10 +664,6 @@ h6 {
 }
 .catalog__item.next p {
   color: #fff;
-  text-align: center;
-  font-size: 18px;
-  max-width: 154px;
-  font-weight: 500;
 }
 .catalog__img {
   position: relative;
@@ -593,7 +683,7 @@ h6 {
   left: 0px;
   object-fit: cover;
 }
-.catalog__subtitle {
+.catalog h3 {
   text-align: center;
 }
 
@@ -672,12 +762,16 @@ h6 {
   z-index: 1;
   filter: blur(15px);
 }
-.catalog-material__subtitle {
+.catalog-material h3 {
   max-width: 150px;
   margin: 0px 0px 18px;
   flex: 1 1 auto;
   text-transform: uppercase;
   line-height: 1.2;
+  color: #fff;
+}
+.catalog-material p {
+  color: #fff;
 }
 
 .info {
@@ -712,9 +806,6 @@ h6 {
 .info__info {
   flex: 1 1 auto;
 }
-.info__info .text {
-  font-size: 20px;
-}
 .info__img {
   flex: 0 0 582px;
   height: 450px;
@@ -729,6 +820,13 @@ h6 {
   left: 0px;
   object-fit: fill;
 }
+.info h2 {
+  color: #fff;
+}
+.info p {
+  font-size: 20px;
+  color: #fff;
+}
 
 .form {
   background: #c90017;
@@ -737,7 +835,8 @@ h6 {
   display: flex;
   gap: 70px;
 }
-.form__row .title {
+.form__row h2 {
+  color: #fff;
   margin: 0px 0px 32px;
 }
 .form__row form {
@@ -763,16 +862,20 @@ h6 {
 .form__info {
   counter-reset: counterForm 0;
 }
-.form__list {
+.form ul {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.form__list li {
+.form ul li {
   position: relative;
   padding: 0px 0px 0px 60px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 135%;
 }
-.form__list li::before {
+.form ul li::before {
   content: counter(counterForm);
   counter-increment: counterForm 1;
   display: flex;
@@ -806,7 +909,7 @@ h6 {
   display: flex;
   gap: 80px;
 }
-.intro-item__row .text {
+.intro-item__row p {
   margin: 0px 0px 32px;
 }
 .intro-item__info {
@@ -819,6 +922,19 @@ h6 {
   color: #1e282b;
   font-size: 24px;
   font-weight: 700;
+  cursor: pointer;
+}
+.intro-item__down p {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e282b;
+}
+.intro-item__down:hover p {
+  color: #c90017;
+}
+.intro-item__down:active p {
+  color: #a20013;
 }
 .intro-item__img {
   position: relative;
@@ -848,11 +964,16 @@ h6 {
   line-height: 134.9%;
   margin: 0px 0px 16px;
 }
-.intro-item-bordered p.text {
+.intro-item-bordered p {
   font-weight: 300;
   margin: 0px 0px 22px;
 }
-.intro-item-bordered h2.text {
+.intro-item-bordered h2 {
+  font-size: 16px;
+  color: #5d6a6d;
+  font-weight: 500;
+  line-height: 135%;
+  text-transform: none;
   margin: 0px 0px 13px;
 }
 .intro-item-bordered .intro-item__row {
@@ -937,8 +1058,8 @@ h6 {
   flex-direction: column;
 }
 
-table.table__row,
-.item-table__table {
+.table__row table,
+.item-table__table table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -949,41 +1070,46 @@ table.table__row,
   overflow: hidden;
 }
 
-table.table__row {
-  overflow-x: scroll;
+.table__row table {
+  overflow-x: auto;
 }
 
-table.table__row tbody {
+.table__row table tbody {
   min-width: 816px;
 }
 
-table.table__row .text th {
+.table__row table tr:first-child th {
   width: 200px;
 }
 
-table.table__row .text th:first-child {
+.table__row table tr:first-child th:first-child {
   width: 500px;
 }
 
-table.table__row,
-table.table__row td,
-table.table__row th,
-table.item-table__table,
-table.item-table__table td,
-table.item-table__table th {
+.table__row table,
+.table__row table td,
+.table__row table th,
+.item-table__table table,
+.item-table__table table td,
+.item-table__table table th {
   border: 1px solid #c90017;
 }
 
-table.table__row td,
-table.table__row th {
+.table__row table td,
+.table__row table th {
   padding: 3px;
   width: 30px;
   height: 35px;
 }
 
-table.table__row td {
+.table__row table td:first-child {
   color: #5d6a6d;
   padding: 0px 0px 0px 47px;
+}
+
+.table__row table td img {
+  display: block;
+  margin: 0 auto;
 }
 
 .item-table__table td {
@@ -991,7 +1117,7 @@ table.table__row td {
   padding: 0px 0px 0px 37px;
 }
 
-table.table__row th,
+.table__row table th,
 .item-table__table th {
   color: #5d6a6d;
   font-family: Ubuntu;
@@ -1039,14 +1165,14 @@ table.table__row th,
 .item-param {
   margin: 0px 0px 48px;
 }
-.item-param__title {
+.item-param h2 {
   display: flex;
   align-items: center;
   gap: 17px;
 }
-.item-param.border .text {
+.item-param.border p {
   padding-bottom: 45px;
-  border-bottom: 1px solid #5d6a6d;
+  border-bottom: 1px solid #5d6a6d !important;
 }
 
 .materials__row {
@@ -1101,10 +1227,10 @@ table.table__row th,
   flex-direction: column;
   gap: 50px;
 }
-.contacts__title {
+.contacts h1 {
   margin: 0px 0px 21px;
 }
-.contacts__subtitle {
+.contacts h2 {
   color: #1e282b;
   font-size: 22px;
   font-weight: 700;
@@ -1216,6 +1342,10 @@ table.table__row th,
 }
 .footer__list a {
   color: #5a6473;
+  transition: color 300ms ease;
+}
+.footer__list a:hover {
+  color: #c90017;
 }
 body {
   font-family: Ubuntu;
@@ -1315,6 +1445,8 @@ body {
     padding: 150px 30px 30px;
     transition: transform 300ms ease 0ms, opacity 400ms ease-in 300ms;
     z-index: 0;
+    max-height: 100%;
+    overflow-y: auto;
   }
   .header__menu.burger-active {
     transform: translate(0%, 0%);
@@ -1346,6 +1478,7 @@ body {
   .header__btn.mobile {
     display: flex;
     margin: 0 auto;
+    margin-top: 24px;
   }
   .footer {
     padding-bottom: 25px;
@@ -1515,14 +1648,15 @@ body {
   .intro__row h2 {
     font-size: 16px;
   }
-  .title {
+  h2 {
     font-size: 22px;
   }
-  .subtitle {
+  h3 {
     font-size: 16px;
   }
-  .text,
-  .info__info .text {
+  p,
+  .info__info p,
+  .table__row table th:first-child {
     font-size: 12px;
   }
   .header__row {
@@ -1531,7 +1665,7 @@ body {
   .container {
     padding: 0px 15px;
   }
-  .catalog-material__item .item__row .text {
+  .catalog-material__item .item__row p {
     padding-right: 80px;
   }
 }
