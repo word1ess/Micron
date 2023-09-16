@@ -530,6 +530,7 @@ p.white,
   padding: 30px;
   background: #0b2855;
   transition: all 300ms ease;
+  text-align: left;
   cursor: pointer;
 }
 .header-down__menu li:hover,
@@ -550,10 +551,15 @@ p.white,
   top: 0px;
   left: 75px;
 }
+.header-down__menu li {
+  position: relative;
+}
 
 .header-down__submenu {
-  transform: translate(3px, 111px);
-  left: 265px;
+  top: -111px;
+  transform: translate(0px, 111px);
+  left: 268px;
+  position: absolute;
 }
 
 .dropdown-container {
